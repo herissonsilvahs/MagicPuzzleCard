@@ -1,0 +1,36 @@
+forca = power
+podermagico = mana
+
+
+ - Cartas do jogo representam feitiços.
+
+ - Jogador:
+            * Reino, Nome, Força, Nivel, Cartas
+
+ - Carta:
+            * Categoria, Nome, Força, Nivel
+
+ - Nivel:
+            * Vida 1000, PoderMagico 500
+
+ - Regras Globais:
+            * Jogador deve possir no maximo 6 feitiços sendo 2 de Defesa e 4 de ataque
+            * Vida for igual a zero, fim de jogo
+            * Deve existir pelo menos uma carta de ataque na mesa
+            * So é possivel usar 2 cartas de defesa por nivel de mana
+            (So poderá ser usado novamente quando recarregar a mana)
+            * Os niveis das cartas tem peso no uso, sendo possivel utiliza-las
+            novamente apenas após o fim do carregamento.
+            * Se o nivel de mana for igual a zero, a proxima rodada o jogador
+            so poderá lançar uma carta de defesa, e após isso o nivel é recarregado
+            * Nivelamento do jogador é feito após a recarga de mana, tendo como
+            nivel maximo 6
+            * A cada nivel o jogador recebe 20% de força a mais da força atual
+
+ - Ataque e defesa
+            * Se o nivel da defesa for maior que o do ataque
+                * Quem defendeu nao sofre dano
+                * Se a força da defesa for mais que do ataque, quem atacou
+                sofre dano restante da força
+                * Se a força do ataque for maior que da defesa, quem defendeu
+                sofre dano restante da força
