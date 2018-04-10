@@ -3,9 +3,7 @@ package com.herisson.game.magicpuzzlecard.main.battlefield;
 import com.herisson.game.magicpuzzlecard.main.card.CardInterface;
 import com.herisson.game.magicpuzzlecard.main.player.Player;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class Board
